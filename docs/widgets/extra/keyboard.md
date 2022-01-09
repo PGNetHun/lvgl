@@ -1,6 +1,6 @@
 ```eval_rst
 .. include:: /header.rst 
-:github_url: |github_link_base|/widgets/keyboard.md
+:github_url: |github_link_base|/widgets/extra/keyboard.md
 ```
 
 
@@ -22,7 +22,8 @@ The Keyboards have the following modes:
 - `LV_KEYBOARD_MODE_TEXT_LOWER`  Display lower case letters
 - `LV_KEYBOARD_MODE_TEXT_UPPER`  Display upper case letters
 - `LV_KEYBOARD_MODE_TEXT_SPECIAL` Display special characters
-- `LV_KEYBOARD_MODE_NUMBER` Display numbers, +/- sign, and decimal dot.
+- `LV_KEYBOARD_MODE_NUMBER` Display numbers, +/- sign, and decimal dot
+- `LV_KEYBOARD_MODE_USER_1` through `LV_KEYBOARD_MODE_USER_4` User-defined modes.
 
 The `TEXT` modes' layout contains buttons to change mode.
 

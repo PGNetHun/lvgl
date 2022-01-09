@@ -1,6 +1,6 @@
 ```eval_rst
 .. include:: /header.rst 
-:github_url: |github_link_base|/widgets/switch.md
+:github_url: |github_link_base|/widgets/core/switch.md
 ```
 
 # Switch (lv_switch)
@@ -18,8 +18,11 @@ The Switch looks like a little slider and can be used to turn something on and o
 ## Usage
 
 ### Change state
-When the switch is turned on it goes to `LV_STATE_CHECKED`. To get the current satte of the switch use `lv_obj_has_state(switch, LV_STATE_CHECKED)`. 
-To manually turn the switch on/off call `lvobj_add/clear_state(switch, LV_STATE_CHECKED)`.
+The switch uses the standard `LV_STATE_CHECKED` state.
+
+To get the current state of the switch (with `true` being on), use `lv_obj_has_state(switch, LV_STATE_CHECKED)`. 
+
+Call `lv_obj_add_state(switch, LV_STATE_CHECKED)` to turn it on, or `lv_obj_clear_state(switch, LV_STATE_CHECKED)` to turn it off.
 
 
 ## Events

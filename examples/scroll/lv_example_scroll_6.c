@@ -1,5 +1,5 @@
 #include "../lv_examples.h"
-#if LV_BUILD_EXAMPLES
+#if LV_BUILD_EXAMPLES && LV_USE_FLEX
 
 static void scroll_event_cb(lv_event_t * e)
 {
@@ -66,7 +66,7 @@ void lv_example_scroll_6(void)
         lv_obj_set_width(btn, lv_pct(100));
 
         lv_obj_t * label = lv_label_create(btn);
-        lv_label_set_text_fmt(label, "Button %d", i);
+        lv_label_set_text_fmt(label, "Button %"LV_PRIu32, i);
     }
 
     /*Update the buttons position manually for first*/
